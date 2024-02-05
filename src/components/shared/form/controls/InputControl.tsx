@@ -16,7 +16,7 @@ interface InputControlProps {
   endAdornment?: React.ReactNode;
   multiline?: boolean;
   rows?: number;
-  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
+  onChange?: (value: string) => void;
 }
 
 const InputControl: React.FC<InputControlProps> = ({ onChange, ...props }) => {
@@ -25,10 +25,9 @@ const InputControl: React.FC<InputControlProps> = ({ onChange, ...props }) => {
       e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
     ) => {
       if (onChange) {
-        onChange(e);  
+        onChange(e.target.value);  
       }
     };
-  // };
   return (
     <FormControlWrapper
       name={props.name}
