@@ -1,0 +1,11 @@
+{
+    "app.header": "संपादित करें <code>src/App.jsx</code> और HMR की जाँच के लिए सहेजें",
+    "app.content": "और अधिक जानने के लिए Vite और React लोगों पर क्लिक करें",
+    "app.channel.plug": "Vite + React. खुश कोडिंग {channelName}",
+    "greeting": "नमस्ते!",
+    "farewell": "अलविदा!",
+    "welcome": "भारत में आपका स्वागत है!",
+    "dateMessage": "आज {date, date, long} है",
+    "currencyMessage": "भारत में उपयोग की जाने वाली मुद्रा भारतीय रुपया (INR) है।"
+  }
+  

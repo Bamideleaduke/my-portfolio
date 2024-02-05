@@ -1,0 +1,11 @@
+{
+    "app.header": "Edite <code>{fileName}</code> y quardoo",
+    "app.content": "Aprender React",
+    "app.channel.plug": "Video presentado {channelName}",
+    "greeting": "¡Hola!",
+    "farewell": "¡Adiós!",
+    "welcome": "¡Bienvenido/a a Nigeria!",
+    "dateMessage": "Hoy es {date, date, long}",
+    "currencyMessage": "La moneda utilizada en India es la Rupia India (INR)."
+  }
+  

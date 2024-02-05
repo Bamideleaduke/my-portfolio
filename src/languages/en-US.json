@@ -1,0 +1,11 @@
+{
+    "app.header": "Edit <code>src/App.jsx</code> and save to test HMR",
+    "app.content": "Click on the Vite and React logos to learn more",
+    "app.channel.plug": "Vite + React. Happy Coding {channelName}",
+    "greeting": "Hello!",
+    "farewell": "Goodbye!",
+    "welcome": "Welcome to Nigeria!",
+    "dateMessage": "Today is {date, date, long}",
+    "currencyMessage": "The currency used in India is the Indian Rupee (INR)."
+  }
+  
