@@ -4,7 +4,6 @@ import { selectColorMode } from "./utils/redux/features/colorModeSlice";
 import { Box } from "@mui/material";
 import { darkTheme, lightTheme } from "./utils/material-themes";
 import ToggleColorModeButton from "./components/ToggleColorModeButton";
-// import LanguageSelection from "./components/LanguageSelection";
 import { motion } from "framer-motion";
 import AppRoutes from "./components/containers/AppRoutes";
 import { Link } from "react-router-dom";

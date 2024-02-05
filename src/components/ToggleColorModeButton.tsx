@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography, IconButton } from "@mui/material";
 import {
   selectColorMode,
@@ -13,9 +12,7 @@ const ToggleColorModeButton = () => {
   const colorMode = useSelector(selectColorMode);
   return (
       <Typography
-        //   sx={{ border: "2px solid red" }}
       >
-      {/* {colorMode} mode */}
       <IconButton
         sx={{ ml: 1, padding: "0" }}
         onClick={() => dispatch(toggleColorMode())}

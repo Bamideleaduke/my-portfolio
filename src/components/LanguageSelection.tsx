@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { Context } from "./wrapper/Wrapper";
 import { Box } from "@mui/material";
 import SelectControl from "./shared/form/controls/SelectControl";
@@ -11,6 +11,10 @@ const LanguageSelection = () => {
     { key: "India", value: "en-IN" },
   ];
   const context = useContext(Context);
+
+  const handleLanguageChange = (e: React.ChangeEvent<any>) => {
+    context.selectLang(e.target.value);
+  };
   return (
     <>
       <Formik
@@ -26,7 +30,7 @@ const LanguageSelection = () => {
               label=""
               placeholder="Language"
               value={context.locale}
-              onChange={context.selectLang}
+              onChange={handleLanguageChange}
               options={LanguageOptions}
             />
           </Box>

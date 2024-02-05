@@ -7,7 +7,7 @@ import {
   MessageIcon,
   PeopleIcon,
   PersonIcon,
-  WhatsAppIcon,
+  // WhatsAppIcon,
   WorkspacePremiumIcon,
 } from "./assets/icons/icons";
 import {

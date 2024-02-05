@@ -5,7 +5,10 @@ import { Button } from "../../shared/buttons/Button";
 
 const ContactForm = () => {
   const { InputFieldNames } = FormMeta;
-  const onSubmit = (values: FormMeta.ContactProps, { resetForm }: FormikHelpers<any>) => {
+  const onSubmit = (
+    values: FormMeta.ContactProps,
+    { resetForm }: FormikHelpers<FormMeta.ContactProps>
+  ) => {
     resetForm();
     console.log(values);
   };

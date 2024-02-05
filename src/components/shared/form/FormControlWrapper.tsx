@@ -8,7 +8,6 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-//   import { StatusIndicator } from './StatusIndicator';
 import { Colors } from "../../../constants/colors";
 
 export interface WrapperProps extends InputLabelProps {
@@ -45,7 +44,6 @@ const FormControlWrapper: React.FC<WrapperProps> = (props) => {
             >
               {props.label}
             </InputLabel>
-            {/* {props.required && <StatusIndicator />} */}
           </Box>
           {props.labelDescription && (
             <Typography sx={{ fontSize: "14px", color: Colors.TextGray }}>

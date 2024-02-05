@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
+import { ElementType } from "react";
 
-const PostLoading = (Component : any) => {
+const PostLoading = (Component : ElementType) => {
   return function PostLoadingComponent({
     isLoading,
     ...props

@@ -9,7 +9,7 @@ interface InputControlProps {
   control?: ControlType;
   placeholder?: string;
   helperText?: React.ReactNode;
-  maxLength?: number | null;
+  maxLength?: number | null ;
   number?: boolean;
   alphabet?: boolean;
   disabled?: boolean;
@@ -19,10 +19,13 @@ interface InputControlProps {
   onChange?: (value: string) => void;
 }
 
-const InputControl: React.FC<InputControlProps> = (props) => {
+const InputControl: React.FC<InputControlProps> = ({
+  onChange,
+  ...props
+}) => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (props.onChange) {
-      props.onChange(event.target.value);
+    if (onChange) {
+      onChange(event.target.value);
     }
   };
   return (
@@ -35,7 +38,7 @@ const InputControl: React.FC<InputControlProps> = (props) => {
         control={props.control ? props.control : "input"}
         name={props.name}
         value={props.value}
-        placeholder={props.placeholder}
+        placeholder={props.placeholder || ""}
         maxLength={props.maxLength}
         number={props.number}
         alphabet={props.alphabet}

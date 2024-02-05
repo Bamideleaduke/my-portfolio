@@ -24,7 +24,7 @@ export type InputProps = TextFieldProps & {
   extraLeft?: ReactNode;
   extraRight?: ReactNode;
   showErrorMessage?: boolean;
-  maxLength: number | null;
+  maxLength?: number | null;
   multiline: boolean;
   rows: number;
 };
@@ -41,7 +41,6 @@ export const Input: React.FC<InputProps> = ({
   alphabet,
   multiline,
   rows,
-  //   showErrorMessage = true,
   maxLength,
   ...props
 }) => {

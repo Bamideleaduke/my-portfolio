@@ -20,22 +20,29 @@ export type FormControlBaseProp<Control extends ControlType = ControlType> =
     ? SwitchProps
     : InputProps) & { control: Control; children?: React.ReactNode };
 
-    export interface FormControlBaseProps {
-      
-      value?: string;
-      onChange?: (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement|HTMLSelectElement>, child: React.ReactNode) => void;
-    }
+export interface FormControlBaseProps {
+  value?: string;
+  onChange?: (
+    event: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >,
+    child: React.ReactNode
+  ) => void;
+}
 
 export const FormControlBase: React.FC<FormControlBaseProp> = ({
   control,
   children,
-  value,   
+  value,
   ...props
 }) => {
   switch (control) {
     case "select":
-      return <SelectInput children={children}  value={value}       
-      {...(props as SelectProps)} />;
+      return (
+        <SelectInput value={value} {...(props as SelectProps)}>
+          {children}
+        </SelectInput>
+      );
     case "switch":
       return <Switch {...(props as SwitchProps)} />;
     default:
