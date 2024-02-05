@@ -1,7 +1,6 @@
-import { Box,Link } from "@mui/material";
+import { Box, Link } from "@mui/material";
 import { Button } from "../../shared/buttons/Button";
 import { ScrollToSectionButton } from "../nav/ScrollToSection";
-
 
 const ControlBtn = () => {
   return (

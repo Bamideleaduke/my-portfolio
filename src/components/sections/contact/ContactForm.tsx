@@ -26,16 +26,19 @@ const ContactForm = () => {
               placeholder="Your Full Name"
               name={InputFieldNames.NAME}
               value={formik.values[InputFieldNames.NAME]}
+              onChange={(e)=>e.target.value}
             />
             <InputControl
               name={InputFieldNames.EMAIL}
               placeholder="Your Email"
+              onChange={(e)=>e.target.value}
             />
             <InputControl
               name={InputFieldNames.MESSAGE}
               multiline
               rows={5}
               placeholder="Your Message"
+              onChange={(e)=>e.target.value}
             />
 
             <Button sx={{ display: "flex", alignItems: "left" }}>

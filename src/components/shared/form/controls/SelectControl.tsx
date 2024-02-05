@@ -6,8 +6,8 @@ import { OptionProp } from '../Select';
 interface InputControlProps {
   name: string;
   label: string;
-  placeholder?: string;
-  options: OptionProp[];
+  placeholder?: string ;
+  options?: OptionProp[];
   value?: string;               
   onChange?: (e: React.ChangeEvent<HTMLSelectElement|unknown>, child: React.ReactNode) => void; 
   fullWidth?: boolean;
@@ -21,7 +21,7 @@ const SelectControl: React.FC<InputControlProps> = (props) => {
         placeholder={props.placeholder}
         options={props.options}
         value={props.value}        
-        onChange={props.onChange}  
+        onChange={(e, child) => props.onChange?.(e, child)} 
         fullWidth={props.fullWidth}
       />
     </FormControlWrapper>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ChangeEvent } from "react";
 import FormControlWrapper from "../FormControlWrapper";
 import { ControlType, FormControlBase } from "../FormControl";
 
@@ -9,25 +9,26 @@ interface InputControlProps {
   control?: ControlType;
   placeholder?: string;
   helperText?: React.ReactNode;
-  maxLength?: number | null ;
+  maxLength?: number | null;
   number?: boolean;
   alphabet?: boolean;
   disabled?: boolean;
   endAdornment?: React.ReactNode;
   multiline?: boolean;
   rows?: number;
-  onChange?: (value: string) => void;
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
-const InputControl: React.FC<InputControlProps> = ({
-  onChange,
-  ...props
-}) => {
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (onChange) {
-      onChange(event.target.value);
-    }
-  };
+const InputControl: React.FC<InputControlProps> = ({ onChange, ...props }) => {
+
+    const handleChange = (
+      e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    ) => {
+      if (onChange) {
+        onChange(e);  
+      }
+    };
+  // };
   return (
     <FormControlWrapper
       name={props.name}
@@ -49,6 +50,7 @@ const InputControl: React.FC<InputControlProps> = ({
         InputProps={{
           endAdornment: props.endAdornment,
         }}
+        fullWidth={undefined}
       />
     </FormControlWrapper>
   );

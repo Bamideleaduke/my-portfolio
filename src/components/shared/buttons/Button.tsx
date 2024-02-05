@@ -1,10 +1,11 @@
-import { Box, ButtonProps, Button as MuiButton, styled } from "@mui/material";
+import { ButtonProps, Button as MuiButton, styled } from "@mui/material";
 import React from "react";
 import { Colors } from "../../../constants/colors";
 
-const StyledButton = styled(MuiButton)(({ variant }) => ({
+const StyledButton = styled(MuiButton)(({ variant,theme }) => ({
   borderRadius: "10px",
-  padding: "10px 40px",
+  // padding: "10px 40px",
+  padding: theme.breakpoints.down("sm") ? "" : "10px 40px",
   textTransform: "none",
   //   boxShadow: `4px 4px 6px 0px ${Colors.MustardYellow}`,
   "&.MuiButton-containedPrimary": {
@@ -42,14 +43,12 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ variant, color, ...restProp }, ref) => {
     // const theme = useTheme()
     return (
-      <Box>
-        <StyledButton
-          color={color}
-          variant={variant ?? "contained"}
-          ref={ref}
-          {...restProp}
-        />
-      </Box>
+      <StyledButton
+        color={color}
+        variant={variant ?? "contained"}
+        ref={ref}
+        {...restProp}
+      />
     );
   }
 );

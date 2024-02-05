@@ -2,9 +2,7 @@ import { Box, Grid, IconButton, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import ProfilePic from "../../../assets/profile-img.jpg";
 import { Colors } from "../../../constants/colors";
-import { Button } from "../../shared/buttons/Button";
 import { Element } from "react-scroll";
-import { ScrollToSectionButton } from "../nav/ScrollToSection";
 import SectionHeader from "../../shared/SectionHeader";
 import { about } from "../../../data";
 
@@ -110,14 +108,7 @@ const About = () => {
             outstanding performance. I am dedicated to staying updated on the
             latest industry trends, ensuring that each project adheres to the
             highest standards.
-            <ScrollToSectionButton
-              sectionId="contact"
-              button={
-                <Button variant="contained" sx={{ marginTop: "1.5rem" }}>
-                  Let's Talk
-                </Button>
-              }
-            ></ScrollToSectionButton>
+           
           </Typography>
         </motion.div>
       </Box>

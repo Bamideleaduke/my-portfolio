@@ -28,7 +28,7 @@ export interface SelectProps extends MuiSelectProps {
   padding?: string;
   options: OptionProp[];
   placeholder: string;
-  onChange: (
+  onChange?: (
     e: SelectChangeEvent<HTMLSelectElement | unknown>,
     child: React.ReactNode
   ) => void;

@@ -70,6 +70,7 @@ const Header = () => {
                 <Typography
                   variant="body2"
                   color="primary"
+              
                   sx={{
                     display: "inline-block",
                     transform: "rotate(90deg)",
