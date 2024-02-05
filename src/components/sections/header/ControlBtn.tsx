@@ -14,7 +14,7 @@ const ControlBtn = () => {
     >
       <Button
         component={Link}
-        href="https://drive.google.com/file/d/16x37hWfnafem53hmJ7fHUrVBF89nWQxV/view?usp=sharing"
+        href="https://drive.google.com/file/d/1MVn2UURx-6gfN33yGpB5ml255RfTO-9g/"
       >
         Download Resume
       </Button>
