@@ -17,6 +17,7 @@ import {
   MaticLotto,
   SBL,
   StatusPage,
+  Insight
 } from "./assets/images";
 
 export const portfolio = [
@@ -63,6 +64,15 @@ export const portfolio = [
   },
   {
     id: 6,
+    image: Insight,
+    title: "Insight Data Dashboard",
+    body: "Insight Data Dashboard is a dashboard to display data charts",
+    github: "https://github.com/Bamideleaduke/insight-dashboard",
+    demo: "https://insight-dashboard.netlify.app/",
+  },
+  
+  {
+    id: 7,
     image: ErrorPage,
     title: "404 Error Page",
     body: "404 gateway error design page.",
