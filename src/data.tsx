@@ -15,9 +15,10 @@ import {
   Dainty,
   ErrorPage,
   MaticLotto,
-  SBL,
+  Sbl,
   StatusPage,
-  Insight
+  Insight,
+  Fifthfactor
 } from "./assets/images";
 
 export const portfolio = [
@@ -31,6 +32,14 @@ export const portfolio = [
   },
   {
     id: 2,
+    image:Fifthfactor,
+    title: "5th Factor Academy",
+    body: "5th Factor Academy, where innovation meets education. Empower yourself with skills that transcend boundaries. Your journey to tech excellence starts now.",
+    github: "#",
+    demo: "https://www.5thfactor.academy/",
+  },
+  {
+    id: 3,
     image: MaticLotto,
     title: "Matic Lotto",
     body: "An NFT Lottery System that is operated by a smart contract.",
@@ -39,15 +48,15 @@ export const portfolio = [
     demo: "https://matic-lotto.netlify.app",
   },
   {
-    id: 3,
-    image: SBL,
+    id: 4,
+    image: Sbl,
     title: "Small Business Loan",
     body: "Small business loan enable small business owners to access loans to expand their businesses.",
     github: "#",
     demo: "https://loans.dukka.com/",
   },
   {
-    id: 4,
+    id: 5,
     image: Comfy,
     title: "Comfy Furniture",
     body: "A platform that serve you the best comfortable furniture.",
@@ -55,7 +64,7 @@ export const portfolio = [
     demo: "https://comfy-home-of-furniture.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     image: StatusPage,
     title: "Service Status Page",
     body: "Serves as a comprehensive platform for displaying real-time service status information. This web application provides users with a clear and intuitive interface to monitor the availability and performance of products",
@@ -63,7 +72,7 @@ export const portfolio = [
     demo: "https://status-page-lake.vercel.app/",
   },
   {
-    id: 6,
+    id: 7,
     image: Insight,
     title: "Insight Data Dashboard",
     body: "Insight Data Dashboard is a dashboard to display data charts",
@@ -72,7 +81,7 @@ export const portfolio = [
   },
   
   {
-    id: 7,
+    id: 8,
     image: ErrorPage,
     title: "404 Error Page",
     body: "404 gateway error design page.",
