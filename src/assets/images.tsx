@@ -7,7 +7,7 @@ import ErrorPage from './error.jpg';
 import Comfy from './comfy.jpg';
 import Insight from './insight-dashboard.jpg';
 import Fifthfactor from './fifthfactor.jpg';
-import FinDash from './findash.png';
+import FinDash from './finDash.png';
 
 export {
   MaticLotto,
