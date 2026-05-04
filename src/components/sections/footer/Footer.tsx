@@ -1,19 +1,19 @@
-import { Box, Typography } from "@mui/material";
-import { Colors } from "../../../constants/colors";
-import { motion } from "framer-motion";
+import { Box, Typography } from '@mui/material';
+import { Colors } from '../../../constants/colors';
+import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
     <Box
       sx={{
-        padding: "4rem 0",
-        backgroundColor: Colors.MustardYellow,
-        textAlign: "center",
+        padding: '4rem 0',
+        backgroundColor: Colors.darkBG,
+        textAlign: 'center',
       }}
     >
       <motion.div
-        initial="hidden"
-        whileInView="visible"
+        initial='hidden'
+        whileInView='visible'
         viewport={{ once: true, amount: 0.5 }}
         transition={{ delay: 0.6, duration: 0.5 }}
         variants={{
@@ -21,8 +21,8 @@ const Footer = () => {
           visible: { opacity: 1, y: 0 },
         }}
       >
-        <Typography sx={{ color: Colors.Grundge }}>
-          &copy; Bamidele Barakat
+        <Typography sx={{ color: Colors.White }}>
+          &copy; {new Date().getFullYear()} Bamidele Barakat
         </Typography>
       </motion.div>
     </Box>

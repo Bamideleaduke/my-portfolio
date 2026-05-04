@@ -1,6 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FAFAFA;
+  color: #111111;
+  font-family: 'Inter', -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #111111;
+  color: #FAFAFA;
 }
 /* 
 :root {

@@ -7,14 +7,14 @@ const StyledButton = styled(MuiButton)(({ variant,theme }) => ({
   // padding: "10px 40px",
   padding: theme.breakpoints.down("sm") ? "" : "10px 40px",
   textTransform: "none",
-  //   boxShadow: `4px 4px 6px 0px ${Colors.MustardYellow}`,
+  //   boxShadow: `4px 4px 6px 0px ${Colors.Grundge}`,
   "&.MuiButton-containedPrimary": {
-    background: Colors.MustardYellow,
+    background: Colors.Grundge,
     color: "primary",
     // background: Colors.Primary,
-    border: `1px solid var(--shite-space, ${Colors.MustardYellow})`,
+    border: `1px solid var(--shite-space, ${Colors.Grundge})`,
     ":hover": {
-      background: Colors.MustardYellow,
+      background: Colors.Grundge,
     },
   },
   "&.Mui-disabled": {
@@ -31,10 +31,10 @@ const StyledButton = styled(MuiButton)(({ variant,theme }) => ({
     boxShadow: "unset",
     fontWeight: 600,
     // background: Colors.White,
-    color: Colors.MustardYellow,
-    border: `1px solid var(--shite-space, ${Colors.MustardYellow})`,
+    color: Colors.Grundge,
+    border: `1px solid var(--shite-space, ${Colors.Grundge})`,
     ":hover": {
-      border: `1px solid var(--shite-space, ${Colors.MustardYellow})`,
+      border: `1px solid var(--shite-space, ${Colors.Grundge})`,
     },
   }),
 }));

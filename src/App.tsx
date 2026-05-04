@@ -44,14 +44,14 @@ function App() {
             <Box
               component={Link}
               to={RouteList.HOME}
-              sx={{ marginRight: "1rem", textDecoration: "none", color:Colors.MustardYellow }}
+              sx={{ marginRight: "1rem", textDecoration: "none", color:Colors.Grundge }}
             >
               Home
             </Box>
             <Box
               component={Link}
               to={RouteList.PORTFOLIO}
-              sx={{ marginRight: "1rem", textDecoration: "none", color:Colors.MustardYellow }}
+              sx={{ marginRight: "1rem", textDecoration: "none", color:Colors.Grundge }}
             >
               Projects
             </Box>

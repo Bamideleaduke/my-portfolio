@@ -37,7 +37,6 @@ export const lightTheme = createTheme({
     },
   });
 
-  const materialTheme = createTheme();
 const GlobalTheme = () => {
     const colorMode = useSelector(selectColorMode);
   
@@ -45,64 +44,79 @@ const GlobalTheme = () => {
     typography: {
       fontSize: 16,
       h1: {
-        fontWeight: 700,
-        fontSize: materialTheme.typography.pxToRem(38),
-        lineHeight: materialTheme.typography.pxToRem(48),
+        fontFamily: "'Inter', -apple-system, sans-serif",
+        fontWeight: 900,
+        fontSize: "clamp(3rem, 10vw, 8rem)",
+        lineHeight: 1,
+        letterSpacing: "-0.05em",
+        textTransform: "uppercase",
       },
       h2: {
-        fontWeight: 700,
-        fontSize: materialTheme.typography.pxToRem(34),
-        lineHeight: materialTheme.typography.pxToRem(43),
+        fontFamily: "'Inter', -apple-system, sans-serif",
+        fontWeight: 800,
+        fontSize: "clamp(2rem, 8vw, 5rem)",
+        lineHeight: 1.1,
+        letterSpacing: "-0.03em",
       },
       h3: {
+        fontFamily: "'Playfair Display', serif",
         fontWeight: 700,
-        fontSize: materialTheme.typography.pxToRem(28),
-        lineHeight: materialTheme.typography.pxToRem(38),
+        fontStyle: "italic",
+        fontSize: "clamp(1.5rem, 5vw, 3rem)",
+        lineHeight: 1.2,
       },
       h4: {
+        fontFamily: "'Inter', -apple-system, sans-serif",
         fontWeight: 700,
-        fontSize: materialTheme.typography.pxToRem(24),
-        lineHeight: materialTheme.typography.pxToRem(28),
+        fontSize: "clamp(1.25rem, 4vw, 2rem)",
+        lineHeight: 1.2,
       },
       h5: {
+        fontFamily: "'Inter', -apple-system, sans-serif",
         fontWeight: 600,
-        fontSize: materialTheme.typography.pxToRem(20),
-        lineHeight: materialTheme.typography.pxToRem(24),
+        fontSize: "1.5rem",
+        lineHeight: 1.3,
       },
       h6: {
+        fontFamily: "'Inter', -apple-system, sans-serif",
         fontWeight: 600,
-        fontSize: materialTheme.typography.pxToRem(16),
-        lineHeight: materialTheme.typography.pxToRem(24),
+        fontSize: "1.25rem",
+        lineHeight: 1.4,
       },
       body1: {
-        fontWeight: 500,
-        fontSize: materialTheme.typography.pxToRem(16),
+        fontFamily: "'Inter', -apple-system, sans-serif",
+        fontWeight: 400,
+        fontSize: "1.125rem",
+        lineHeight: 1.6,
       },
       body2: {
+        fontFamily: "'Inter', -apple-system, sans-serif",
         fontWeight: 400,
-        fontSize: materialTheme.typography.pxToRem(14),
-        lineHeight: materialTheme.typography.pxToRem(24),
+        fontSize: "1rem",
+        lineHeight: 1.6,
       },
       caption: {
         fontWeight: 400,
-        fontSize: materialTheme.typography.pxToRem(12),
+        fontSize: "0.875rem",
+        letterSpacing: "0.05em",
+        textTransform: "uppercase",
       },
       fontFamily: [
-        'Poppins',
+        'Inter',
         '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
         'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
       ].join(','),
     },
         palette: {
           mode: colorMode,
+          background: {
+            default: Colors.OffWhite,
+            paper: Colors.OffWhite,
+          },
+          text: {
+            primary: Colors.Black,
+            secondary: Colors.TextGray,
+          },
         // primary: colorMode === 'dark' ? { main: Colors.Primary } : { main: Colors.Success },
         // secondary: colorMode === 'dark' ? { main: Colors.PaleGray } : { main: Colors.Grundge },
         // Add other palette settings as needed
