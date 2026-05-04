@@ -1,26 +1,26 @@
-import { Box, Link as MuiLink, Typography } from "@mui/material";
-import { motion } from "framer-motion";
-import { Element } from "react-scroll";
+import { Box, Link as MuiLink, Typography } from '@mui/material';
+import { motion } from 'framer-motion';
+import { Element } from 'react-scroll';
 
 const Contact = () => {
   return (
-    <Element name="contact">
+    <Element name='contact'>
       <Box
         sx={{
-          minHeight: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          backgroundColor: "#111111",
-          color: "#FAFAFA",
-          textAlign: "center",
-          padding: { xs: "2rem", md: "4rem" },
+          minHeight: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          backgroundColor: '#111111',
+          color: '#FAFAFA',
+          textAlign: 'center',
+          padding: { xs: '2rem', md: '4rem' },
         }}
       >
         <motion.div
-          initial="hidden"
-          whileInView="visible"
+          initial='hidden'
+          whileInView='visible'
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.8 }}
           variants={{
@@ -29,33 +29,32 @@ const Contact = () => {
           }}
         >
           <Typography
-            variant="h4"
             sx={{
-              marginBottom: "2rem",
-              textTransform: "uppercase",
-              letterSpacing: "0.2em",
-              color: "#888",
+              mb: { xs: 1.5, md: 2 },
+              textTransform: 'uppercase',
+              letterSpacing: { xs: '0.12em', md: '0.2em' },
+              color: '#888',
+              fontSize: { xs: '0.7rem', md: '0.9rem' },
             }}
           >
             Got a project in mind?
           </Typography>
-          
+
           <MuiLink
-            href="mailto:bamidelebarakatt@outlook.com"
-            underline="none"
+            href='mailto:bamidelebarakatt@outlook.com'
+            underline='none'
             sx={{
-              color: "#FAFAFA",
-              transition: "opacity 0.3s ease",
-              "&:hover": { opacity: 0.7 },
+              color: '#FAFAFA',
+              transition: 'opacity 0.3s ease',
+              '&:hover': { opacity: 0.7 },
             }}
           >
             <Typography
-              variant="h1"
               sx={{
-                fontSize: "clamp(4rem, 15vw, 12rem)",
+                fontSize: 'clamp(4rem, 15vw, 12rem)',
                 fontWeight: 900,
                 lineHeight: 0.9,
-                letterSpacing: "-0.05em",
+                letterSpacing: '-0.05em',
               }}
             >
               LET'S

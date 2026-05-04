@@ -1,40 +1,59 @@
-import { Box, Typography } from "@mui/material";
-import { motion } from "framer-motion";
-import { Element } from "react-scroll";
+import { Box, Typography } from '@mui/material';
+import { motion } from 'framer-motion';
+import { Element } from 'react-scroll';
 
 const About = () => {
   return (
-    <Element name="about">
+    <Element name='about'>
       <Box
         sx={{
-          padding: { xs: "4rem 2rem", md: "8rem 4rem" },
-          backgroundColor: "#1A1A1A",
-          color: "#FAFAFA",
-          display: "flex",
-          justifyContent: "center",
+          px: { xs: 2, sm: 3, md: 6 },
+          py: { xs: 6, md: 10 },
+          backgroundColor: '#1A1A1A',
+          color: '#FAFAFA',
+          display: 'flex',
+          justifyContent: 'center',
         }}
       >
         <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
+          initial='hidden'
+          whileInView='visible'
+          viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 0.8 }}
           variants={{
-            hidden: { opacity: 0, y: 50 },
+            hidden: { opacity: 0, y: 40 },
             visible: { opacity: 1, y: 0 },
           }}
         >
           <Typography
-            variant="h3"
             sx={{
-              maxWidth: "1000px",
+              maxWidth: { xs: '100%', md: '750px' },
               fontFamily: "'Inter', -apple-system, sans-serif",
-              fontStyle: "normal",
-              lineHeight: 1.3,
-              textAlign: "left",
+              lineHeight: 1.6,
+
+              textAlign: { xs: 'center', md: 'left' },
+
+              fontSize: {
+                xs: 'clamp(1.1rem, 4vw, 1.3rem)',
+                sm: 'clamp(1.2rem, 3vw, 1.4rem)',
+                md: 'clamp(1.4rem, 2.2vw, 1.8rem)',
+              },
             }}
           >
-            I am a frontend engineer driven by a passion for <span style={{ fontFamily: "'Playfair Display', serif", fontStyle: "italic", color: "#e2dcd0" }}>exceptional user experiences</span>. My approach merges a deep understanding of modern web technologies with an editorial eye for design. I build interfaces that don't just work, they make an impact.
+            I am a frontend engineer driven by a passion for{' '}
+            <Box
+              component='span'
+              sx={{
+                fontFamily: "'Playfair Display', serif",
+                fontStyle: 'italic',
+                color: '#e2dcd0',
+              }}
+            >
+              exceptional user experiences
+            </Box>
+            . My approach merges a deep understanding of modern web technologies
+            with an editorial eye for design. I build interfaces that don’t just
+            work — they make an impact.
           </Typography>
         </motion.div>
       </Box>
