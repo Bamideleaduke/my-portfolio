@@ -1,3 +1,4 @@
+import { Home } from '@mui/icons-material';
 import {
   EmailIcon,
   FolderIcon,
@@ -20,6 +21,7 @@ import {
   Insight,
   Fifthfactor,
   FinDash,
+  HomeBuddy,
 } from './assets/images';
 
 export const portfolio = [
@@ -30,6 +32,14 @@ export const portfolio = [
     body: 'A comprehensive frontend application demonstrating modern fintech architecture. Built with a highly modular component system, it features complex state-driven forms, strict Zod validation, and dynamic UI flows for multi-currency wallet management and user settings.',
     github: 'https://github.com/Bamideleaduke/findash',
     demo: 'https://demo-findash.vercel.app/login',
+  },
+  {
+    id: 10,
+    image: HomeBuddy,
+    title: 'Home Buddy',
+    body: 'A real estate platform that connects buyers and sellers, providing a seamless experience for finding and purchasing properties. With a user-friendly interface and powerful search features, Home Buddy makes it easy to find your dream home.',
+    github: 'https://github.com/Bamideleaduke/home-buddy',
+    demo: 'https://home-buddy-estate.vercel.app/',
   },
   {
     id: 2,

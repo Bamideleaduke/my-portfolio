@@ -8,6 +8,7 @@ import Comfy from './comfy.jpg';
 import Insight from './insight-dashboard.jpg';
 import Fifthfactor from './fifthfactor.jpg';
 import FinDash from './finDash.png';
+import HomeBuddy from './homeBuddy.png';
 
 export {
   MaticLotto,
@@ -20,4 +21,5 @@ export {
   Insight,
   Fifthfactor,
   FinDash,
+  HomeBuddy,
 };
