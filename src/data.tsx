@@ -23,12 +23,37 @@ import {
   HomeBuddy,
 } from './assets/images';
 
-export const portfolio = [
+export const portfolio: {
+  id: number;
+  image: string;
+  title: string;
+  body: string;
+  highlights?: string[];
+  github: string;
+  demo: string;
+  builtWith?: string[];
+}[] = [
   {
     id: 1,
     image: FinDash,
     title: 'FinDash (Modern Fintech Architecture Demo)',
-    body: 'A comprehensive frontend application demonstrating modern fintech architecture. Built with a highly modular component system, it features complex state-driven forms, strict Zod validation, and dynamic UI flows for multi-currency wallet management and user settings.',
+    body: 'A production-style fintech frontend built to demonstrate how I approach complex financial interfaces, from multi-currency wallet management to validated, state-driven user flows.',
+    highlights: [
+      'Multi-currency wallet & transaction flows',
+      'Modular component architecture',
+      'Complex state-driven forms with Zod validation',
+      'Data-driven dashboard interfaces with ApexCharts',
+      'Responsive fintech UX with Tailwind CSS',
+      'Context API for lightweight state management',
+    ],
+    builtWith: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Tailwind CSS',
+      'Zod',
+      'React Hook Form',
+    ],
     github: 'https://github.com/Bamideleaduke/findash',
     demo: 'https://demo-findash.vercel.app/login',
   },
@@ -39,6 +64,13 @@ export const portfolio = [
     body: 'A real estate platform that connects buyers and sellers, providing a seamless experience for finding and purchasing properties. With a user-friendly interface and powerful search features, Home Buddy makes it easy to find your dream home.',
     github: 'https://github.com/Bamideleaduke/home-buddy',
     demo: 'https://home-buddy-estate.vercel.app/',
+    highlights: [
+      'Modular component architecture',
+      'Property search and discovery with filtering',
+      'Interactive property carousels and listings',
+      'Responsive UI designed with Material UI',
+    ],
+    builtWith: ['React', 'Next.js', 'TypeScript', 'Material UI'],
   },
   {
     id: 2,
@@ -47,6 +79,7 @@ export const portfolio = [
     body: 'An E-commerce website with stripe payment gateway integration.',
     github: 'https://github.com/Bamideleaduke/dainty_confectioneries',
     demo: 'https://dainty-confectioneries.vercel.app/',
+    builtWith: ['React', 'TypeScript', 'Next.js', 'Stripe'],
   },
   {
     id: 3,
